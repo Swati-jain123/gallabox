@@ -117,7 +117,7 @@ const HeroSection = () => {
 
         {/* Desktop view: Scrolling client logos */}
         <div className="relative overflow-hidden w-full h-[90px] bg-white lg:block hidden">
-          <div className="absolute flex animate-scroll">
+          <div className="absolute flex animate-scroll-fast">
             {logos.concat(logos).map((src, index) => (
               <div
                 key={index}

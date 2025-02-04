@@ -20,8 +20,10 @@ module.exports = {
         },
       },
       animation: {
-        scroll: "scroll 25s linear infinite", // Adding scroll animation
+        "scroll-fast": "scroll 15s linear infinite", // Faster scroll
+        "scroll-slow": "scroll 55s linear infinite", // Slower scroll
       },
+      
     },
   },
   plugins: [
