@@ -1,0 +1,116 @@
+/* FullScreenCarousel.css */
+.fullscreen-carousel {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    overflow: hidden;
+  }
+  
+  .slick-slide {
+    height: 100vh; /* Each slide takes up full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slick-list {
+    margin: 0;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make images fill the space */
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Apply the fade-in effect */
+    animation-delay: 0s; /* Default delay (for first image) */
+  }
+  
+  .slick-slide:nth-child(1) .carousel-image {
+    animation-delay: 0s; /* First image appears immediately */
+  }
+  
+  .slick-slide:nth-child(2) .carousel-image {
+    animation-delay: 1s; /* Second image appears with a delay */
+  }
+  
+  .slick-slide:nth-child(3) .carousel-image {
+    animation-delay: 2s; /* Third image appears with a delay */
+  }
+  
+  .slick-slide:nth-child(4) .carousel-image {
+    animation-delay: 3s; /* Fourth image appears with a delay */
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Progress Bar Styles */
+  .slick-dots {
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    flex-wrap: wrap;
+  }
+  
+  @keyframes progressBar {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .slick-dots li {
+    background: #DFDFDF;
+    height: 4px;
+    flex: 1;
+    position: relative;
+    width: 100%;
+    max-width: 270px;
+  }
+  
+  .slick-dots li.slick-active {
+    background: #DFDFDF;
+    position: relative;
+  }
+  
+  .slick-dots li.slick-active:after {
+    content: "";
+    background-color: #666666;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    animation: progressBar 6s ease-in-out;
+    animation-fill-mode: both;
+    z-index: 5;
+    top: 0;
+  }
+  
+  .slick-dots li button {
+    height: 0.5rem;
+  }
+  
+  .slick-dots li button:before {
+    content: "";
+    color: white;
+  }
+  

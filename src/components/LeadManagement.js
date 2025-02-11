@@ -54,7 +54,7 @@ const LeadManagement = () => {
         
       >
         {/* Left side: Text content */}
-        <div className="w-1/2 hidden lg:block text-left ml-[150px]">
+        <div className="w-1/2 hidden lg:block text-left 2xl:ml-[150px] mx-5">
           {features.map((feature, index) => (
             <div key={index} className="h-screen flex flex-col justify-center">
               <h6
