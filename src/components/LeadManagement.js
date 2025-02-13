@@ -6,53 +6,58 @@ const LeadManagement = () => {
     {
       title: "Lead capturing",
       subtitle: "Collect verified leads without friction",
-      description1: "Ditch those annoying lead forms that cause user drop-offs.",
-      description2:"Use Click-to-WhatsApp ads and widgets to drive prospects straight to your WhatsApp business account to make the most of your traffic; get verified numbers without a complicated user experience.",
+      description1:
+        "Ditch those annoying lead forms that cause user drop-offs.",
+      description2:
+        "Use Click-to-WhatsApp ads and widgets to drive prospects straight to your WhatsApp business account to make the most of your traffic; get verified numbers without a complicated user experience.",
       buttonText: "Know more",
       buttonLink: "https://gallabox.com/click-to-whatsapp-ads",
-      videoSrc: "https://assets.gallabox.com/gb-home/new-landing/key-feature/lead_capturing.webm",
+      videoSrc:
+        "https://assets.gallabox.com/gb-home/new-landing/key-feature/lead_capturing.webm",
       bgColor: "bg-[#F2FFEA]",
     },
     {
       title: "Lead qualification",
       subtitle: "Use AI chatbots to instantly filter prime prospects",
       description1: "Quit wasting your sales team’s time on low-intent leads.",
-      description2:"Build no-code AI chatbots to ask the right questions, collect essential lead info, and then route the prospects to the appropriate agent or sales rep — all on WhatsApp.",
+      description2:
+        "Build no-code AI chatbots to ask the right questions, collect essential lead info, and then route the prospects to the appropriate agent or sales rep — all on WhatsApp.",
       buttonText: "Know more",
       buttonLink: "https://gallabox.com/whatsapp-chatbot",
-      videoSrc: "https://assets.gallabox.com/gb-home/new-landing/key-feature/lead_qualification.webm",
+      videoSrc:
+        "https://assets.gallabox.com/gb-home/new-landing/key-feature/lead_qualification.webm",
       bgColor: "bg-[#F5EEFF]",
     },
     {
       title: "Lead nurturing",
       subtitle: "Run multi-touch WhatsApp campaigns to create new pipeline",
       description1: "Don’t turn away prospects who may be potential buyers.",
-      description2:"Keep your prospects engaged with broadcast and sequence campaigns for every buyer segment. Make your campaigns stand out with interactive buttons, rich media and contextual auto-replies.",
+      description2:
+        "Keep your prospects engaged with broadcast and sequence campaigns for every buyer segment. Make your campaigns stand out with interactive buttons, rich media and contextual auto-replies.",
       buttonText: "Know more",
       buttonLink: "https://gallabox.com/whatsapp-broadcast",
-      videoSrc: "https://assets.gallabox.com/gb-home/new-landing/key-feature/lead_nurturing.webm",
+      videoSrc:
+        "https://assets.gallabox.com/gb-home/new-landing/key-feature/lead_nurturing.webm",
       bgColor: "bg-[#FFFADF]",
     },
     {
       title: "Lead conversion",
       subtitle: "Close deals faster with full visibility and context",
       description1: "Never lose track of a prospect or customer message.",
-      description2:"Enable your sales team to access every WhatsApp conversation in a shared team inbox — with all context intact. Reduce sales cycles with quick responses (and in multiple languages) using Gallabox Gen AI and help them hit your targets every month.",
+      description2:
+        "Enable your sales team to access every WhatsApp conversation in a shared team inbox — with all context intact. Reduce sales cycles with quick responses (and in multiple languages) using Gallabox Gen AI and help them hit your targets every month.",
       buttonText: "Know more",
       buttonLink: "https://gallabox.com/whatsapp-shared-inbox",
-      videoSrc: "https://assets.gallabox.com/gb-home/new-landing/key-feature/lead_conversion.webm",
+      videoSrc:
+        "https://assets.gallabox.com/gb-home/new-landing/key-feature/lead_conversion.webm",
       bgColor: "bg-[#E1FCFF]",
     },
   ];
 
   return (
     <div>
-      
       {/* Section visible on large screens */}
-      <div
-        className="hidden lg:flex relative mt-[0px] "
-        
-      >
+      <div className="hidden lg:flex relative mt-[0px] ">
         {/* Left side: Text content */}
         <div className="w-1/2 hidden lg:block text-left 2xl:ml-[150px] mx-5">
           {features.map((feature, index) => (

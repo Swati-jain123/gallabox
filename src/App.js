@@ -7,6 +7,9 @@ import LeadManagement from './components/LeadManagement';
 import WhatsAppFeatures from './components/WhatsappFeatures';
 import IntegrationSection from './components/IntegrationSection';   
 import Testimonials from './components/Testimonials';
+import RecognitionSection from './components/RecognitionSection';
+import FooterHeroSection from './components/FooterHeroSection';
+import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
@@ -17,6 +20,10 @@ function App() {
 <WhatsAppFeatures/>
 <IntegrationSection/>
 <Testimonials/>
+<RecognitionSection/>
+
+{/* <FooterHeroSection/>
+<Footer/> */}
 
     </div>
   );
