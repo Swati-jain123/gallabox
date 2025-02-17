@@ -22,8 +22,8 @@ function App() {
 <Testimonials/>
 <RecognitionSection/>
 
-{/* <FooterHeroSection/>
-<Footer/> */}
+<FooterHeroSection/>
+
 
     </div>
   );

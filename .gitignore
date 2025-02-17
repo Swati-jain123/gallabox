@@ -5,7 +5,6 @@
 /.pnp
 .pnp.js
 #files
-/src/components/FooterHeroSection.js
 
 /src/components/Footer.js
 # testing
