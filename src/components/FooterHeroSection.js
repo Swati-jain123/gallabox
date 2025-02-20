@@ -7,7 +7,7 @@ export default function FooterHeroSection() {
             "linear-gradient(101deg, #102565 -0.21%, #0A3FE7 38.51%, #0A3FE7 59.13%, #010E36 99.99%)",
         }}
       >
-        <div className="lg:mx-auto w-full flex flex-col ">
+        <div className="lg:mx-auto w-full flex flex-col">
           <div className="lg:mb-24 mb-16 text-left mx-5 2xl:ml-[130px]">
             <h2 className="lg:text-6xl text-4xl font-semibold text-white lg:mb-6 mb-7" style={{ fontFamily: "Degular Display" }}>
               Turn connections into conversions
@@ -53,7 +53,7 @@ export default function FooterHeroSection() {
   
   function StatCard({ value, label }) {
     return (
-      <div className="text-white flex flex-col lg:gap-6 gap-5 lg:w-1/3 w-full text-left mx-5">
+      <div className="text-white flex flex-col lg:gap-6 gap-5 lg:w-1/3 w-auto text-left mx-5">
         <p className="text-6xl font-bold md:text-8xl" style={{ fontFamily: "Degular Variable" }}>
           {value}
         </p>

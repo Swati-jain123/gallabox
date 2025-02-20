@@ -23,6 +23,7 @@ function App() {
 <RecognitionSection/>
 
 <FooterHeroSection/>
+<Footer/>
 
 
     </div>
