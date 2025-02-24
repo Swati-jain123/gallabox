@@ -324,7 +324,7 @@ const ResponsiveHeader = () => {
               onMouseLeave={() => toggleDropdown(null)}
             >
               {/* Top-level menu button */}
-              <button className="text-gray-700 font-medium text-[14px] 2xl:text-[16px] dark:text-white flex items-center">
+              <button className="text-gray-700 font-medium text-[14px] 2xl:text-[14px] dark:text-white flex items-center">
                 {menu}
                 {/* Downward arrow icon */}
                 <svg
@@ -376,7 +376,7 @@ const ResponsiveHeader = () => {
                                     alt={`${option.name} Logo`}
                                     className="w-8 h-8 mr-2"
                                   />
-                                  <span className="font-medium text-[20px]">
+                                  <span className="font-medium text-[16px]">
                                     {/* Option name */}
                                     {option.name}
                                   </span>
