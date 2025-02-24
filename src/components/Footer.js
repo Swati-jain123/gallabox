@@ -37,25 +37,25 @@ const Footer = () => {
       </div>
 
       {/* Middle Section */}
-      <div className="hidden lg:block 2xl:max-w-[1300px] lg:mx-auto px-5 w-full pt-20 pb-12">
+      <div className="hidden lg:block 2xl:max-w-[1500px] lg:mx-auto px-5 w-full pt-20 pb-12">
         <div className="flex flex-col gap-16">
           <div className="w-full flex flex-row gap-5">
             {/* Features */}
             <div className="flex flex-col gap-5 w-1/3">
-              <h6 className="text-[14px] text-gray-100 font-semibold text-left">Features</h6>
+              <h6 className="text-[16px] text-gray-100 font-semibold text-left">Features</h6>
               <div className="flex flex-col gap-4 pb-6">
                 {mobileMenuItems.Features.map((feature, index) => (
-                  <a key={index} className="text-[14px] hover:underline cursor-pointer text-gray-400 text-left" href={`/${feature.toLowerCase().replace(/ /g, '-')}`}>{feature}</a>
+                  <a key={index} className="text-[16px] hover:underline cursor-pointer text-gray-400 text-left" href={`/${feature.toLowerCase().replace(/ /g, '-')}`}>{feature}</a>
                 ))}
               </div>
             </div>
 
             {/* Integration */}
             <div className="flex flex-col gap-5 w-1/4">
-              <h6 className="text-xl text-gray-100 font-semibold text-left">Integration</h6>
+              <h6 className="text-[16px] text-gray-100 font-semibold text-left">Integration</h6>
               <div className="flex flex-col gap-4 pb-6 text-left">
                 {mobileMenuItems.Integration.map((integration, index) => (
-                  <a key={index} className="text-xl hover:underline cursor-pointer text-gray-400" href={`/${integration.toLowerCase().replace(/ /g, '-')}`}>
+                  <a key={index} className="text-[16px] hover:underline cursor-pointer text-gray-400" href={`/${integration.toLowerCase().replace(/ /g, '-')}`}>
                     {integration}
                     {['Calendly', 'Zoho CRM', 'Odoo'].includes(integration) && <span className="text-xs ml-3 px-2 py-1 rounded-2xl text-white font-semibold" style={{ background: '#3364FA' }}>NEW</span>}
                   </a>
@@ -65,10 +65,10 @@ const Footer = () => {
 
             {/* Industry */}
             <div className="flex flex-col gap-5 w-1/4">
-              <h6 className="text-xl text-gray-100 font-semibold text-left">Industry</h6>
+              <h6 className="text-[16px] text-gray-100 font-semibold text-left">Industry</h6>
               <div className="flex flex-col gap-4 pb-6 text-left">
                 {mobileMenuItems.Industry.map((industry, index) => (
-                  <a key={index} className="text-xl hover:underline cursor-pointer text-gray-400" href={`/${industry.toLowerCase().replace(/ /g, '-')}`}>
+                  <a key={index} className="text-[16px] hover:underline cursor-pointer text-gray-400" href={`/${industry.toLowerCase().replace(/ /g, '-')}`}>
                     {industry}
                     {industry === 'Real Estate' && <span className="text-xs ml-3 px-2 py-1 rounded-2xl text-white font-semibold" style={{ background: '#3364FA' }}>NEW</span>}
                   </a>
@@ -78,30 +78,30 @@ const Footer = () => {
 
             {/* Compare */}
             <div className="flex flex-col gap-5 w-1/4">
-              <h6 className="text-xl text-gray-100 font-semibold text-left">Compare</h6>
+              <h6 className="text-[16px] text-gray-100 font-semibold text-left">Compare</h6>
               <div className="flex flex-col gap-4 pb-6 text-left">
                 {mobileMenuItems.Compare.map((compare, index) => (
-                  <a key={index} className="text-xl hover:underline cursor-pointer text-gray-400" href={`/${compare.toLowerCase().replace(/ /g, '-')}`}>{compare}</a>
+                  <a key={index} className="text-[16px] hover:underline cursor-pointer text-gray-400" href={`/${compare.toLowerCase().replace(/ /g, '-')}`}>{compare}</a>
                 ))}
               </div>
             </div>
 
             {/* Resources */}
             <div className="flex flex-col gap-5 w-1/4">
-              <h6 className="text-xl text-gray-100 font-semibold text-left">Resources</h6>
+              <h6 className="text-[16px] text-gray-100 font-semibold text-left">Resources</h6>
               <div className="flex flex-col gap-4 pb-6 text-left">
                 {mobileMenuItems.Resources.map((resource, index) => (
-                  <a key={index} className="text-xl hover:underline cursor-pointer text-gray-400" href={`/${resource.toLowerCase().replace(/ /g, '-')}`} target="_blank" rel="noreferrer">{resource}</a>
+                  <a key={index} className="text-[16px] hover:underline cursor-pointer text-gray-400" href={`/${resource.toLowerCase().replace(/ /g, '-')}`} target="_blank" rel="noreferrer">{resource}</a>
                 ))}
               </div>
             </div>
 
             {/* Company */}
             <div className="flex flex-col gap-5 w-1/4">
-              <h6 className="text-xl text-gray-100 font-semibold text-left">Company</h6>
+              <h6 className="text-[16px] text-gray-100 font-semibold text-left">Company</h6>
               <div className="flex flex-col gap-4 pb-6 text-left">
                 {mobileMenuItems.Company.map((company, index) => (
-                  <a key={index} className="text-xl cursor-pointer text-gray-400 hover:underline" href={`/${company.toLowerCase().replace(/ /g, '-')}`}>
+                  <a key={index} className="text-[16px] cursor-pointer text-gray-400 hover:underline" href={`/${company.toLowerCase().replace(/ /g, '-')}`}>
                     {company}
                     {company === 'Partner with us' && <span className="text-xs ml-3 px-2 py-1 rounded-2xl text-white font-semibold" style={{ background: '#3364FA' }}>NEW</span>}
                   </a>
