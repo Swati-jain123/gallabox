@@ -27,7 +27,7 @@ const Footer = () => {
     <footer className="bg-black text-gray-100">
       {/* Top Section */}
       <div style={{ background: 'linear-gradient(90deg, #0E1018 0%, #282A30 100%)' }} className="w-full">
-        <div className="lg:max-w-7xl lg:mx-auto px-5 w-full flex lg:flex-row flex-col items-center justify-center lg:gap-14 gap-3 text-xl font-medium text-white lg:py-4 py-5">
+        <div className="lg:max-w-7xl 2xl:max-w-7xl lg:mx-auto px-5 w-full flex lg:flex-row flex-col items-center justify-center lg:gap-14 gap-3 text-xl font-medium text-white lg:py-4 py-5">
           <div style={{ height: '20px' }}>
             <img alt="meta partner logo" loading="lazy" width="220" height="20" decoding="async" style={{ color: 'transparent' }} src="https://assets.gallabox.com/gb-home/new-landing/footer/meta-partner-light.svg" />
           </div>
