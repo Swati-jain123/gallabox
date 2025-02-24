@@ -249,9 +249,9 @@ const ResponsiveHeader = () => {
   };
 
   return (
-    <nav className="bg-white shadow-lg border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <nav className="bg-white shadow-lg border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed z-50 w-full">
       {/* Container for navigation content */}
-      <div className="max-w-screen-xl mx-auto flex justify-between p-4 lg:flex-row ">
+      <div className="mx-auto flex justify-between p-4 lg:flex-row 2xl:mx-[150px]">
         {/* Gallabox Logo  Left side*/}
         <a href="#" className="flex items-center mb-4 lg:mb-0">
           <img
@@ -306,7 +306,7 @@ const ResponsiveHeader = () => {
           )}
         </button>
         {/* Desktop Navigation Menu */}
-        <div className="hidden lg:flex items-center justify-center space-x-4">
+        <div className="hidden lg:flex items-center justify-center space-x-4 2xl:space-x-4">
           {/* Dynamic rendering of top-level menu items */}
           {[
             "Features",
@@ -324,7 +324,7 @@ const ResponsiveHeader = () => {
               onMouseLeave={() => toggleDropdown(null)}
             >
               {/* Top-level menu button */}
-              <button className="text-gray-700 font-medium text-[16px] dark:text-white flex items-center">
+              <button className="text-gray-700 font-medium text-[14px] 2xl:text-[19px] dark:text-white flex items-center">
                 {menu}
                 {/* Downward arrow icon */}
                 <svg
@@ -376,7 +376,7 @@ const ResponsiveHeader = () => {
                                     alt={`${option.name} Logo`}
                                     className="w-8 h-8 mr-2"
                                   />
-                                  <span className="font-medium text-[16px]">
+                                  <span className="font-medium text-[20px]">
                                     {/* Option name */}
                                     {option.name}
                                   </span>
@@ -405,26 +405,26 @@ const ResponsiveHeader = () => {
           ))}
         </div>
         {/* Right Side Links */}
-        <div className="hidden lg:flex items-center space-x-6">
+        <div className="hidden lg:flex items-center space-x-6 ">
           {/* Pricing Link */}
 
           <a
             href="#"
-            className="text-gray-700 hover:text-blue-600 dark:text-white"
+            className="text-gray-700 hover:underline dark:text-white text-[14px] 2xl:text-[19px] font-medium"
           >
             Pricing
           </a>
           {/* Contact Link */}
           <a
             href="#"
-            className="text-gray-700 hover:text-blue-600 dark:text-white"
+            className="text-gray-700 dark:text-white text-[14px] 2xl:text-[19px] font-medium"
           >
-            Contact
+            Login
           </a>
           {/* Call to Action Button */}
           <a
             href="#"
-            className="px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+            className="px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-[14px] 2xl:text-[19px] font-medium"
           >
             Start Free Trial
           </a>
@@ -434,7 +434,7 @@ const ResponsiveHeader = () => {
       {/* Mobile Menu (Header for small screen)*/}
       {isMenuOpen && (
         <div
-          className="lg:hidden bg-white border-t border-gray-200 dark:border-gray-700"
+          className="lg:hidden bg-white border-t border-gray-200 dark:border-gray-700 h-screen overflow-y-auto "
           id="mobile-menu"
         >
           <ul className="space-y-2 p-4">

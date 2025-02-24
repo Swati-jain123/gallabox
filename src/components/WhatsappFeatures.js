@@ -66,7 +66,7 @@ const Slider = () => {
 
   return (
     <section className="lg:py-20 py-16 bg-gradient-to-r from-[#396AFF] to-[#000] overflow-hidden mt-12">
-      <div className="lg:max-w-7xl lg:mx-auto px-5 w-full flex flex-col lg:gap-12 gap-8">
+      <div className="text-left 2xl:mx-[150px] px-5 w-auto flex flex-col lg:gap-12 gap-8">
         {/* Header section */}
         <div className="flex justify-between">
           <div className="flex flex-col gap-6">
@@ -90,7 +90,7 @@ const Slider = () => {
         </div>
 
         {/* Slider container */}
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden ">
           <div
             className="flex transition-transform duration-300 ease-in-out"
             style={{ transform: `translateX(-${currentSlide * (100 / slidesToShow)}%)` }} // Adjust for mobile vs desktop
@@ -98,17 +98,17 @@ const Slider = () => {
             {slides.map((slide, index) => (
               <div
                 key={index}
-                className="lg:w-[500px] w-full flex-shrink-0 px-2 overflow-hidden"
+                className="lg:w-[500px] w-full flex-shrink-0 px-2 overflow-hidden "
               >
                 <div className="flex flex-col gap-0 rounded">
                   <div className="w-full rounded-t-lg overflow-hidden lg:h-64 h-44">
                     <img alt={slide.title} loading="lazy" className="w-full h-full object-cover" src={slide.imgSrc} />
                   </div>
                   <div className="w-full lg:h-44 h-52 bg-white p-6 rounded-b-lg flex flex-col">
-                    <h3 className="text-xl font-semibold mb-2">{slide.title}</h3>
-                    <p className="text-base mb-3">{slide.description}</p>
+                    <h3 className="text-xl lg:text-2xl font-bold mb-2">{slide.title}</h3>
+                    <p className="text-base lg:text-[18px] mb-3">{slide.description}</p>
                     <div className="flex-grow"></div>
-                    <a className="text-base font-medium flex gap-2 w-fit text-[#3364FA]" target="_blank" href={slide.link}>
+                    <a className="text-base lg:text-xl font-medium flex gap-2 w-fit text-[#3364FA]" target="_blank" href={slide.link}>
                       Know more
                     </a>
                   </div>

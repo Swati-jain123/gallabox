@@ -20,7 +20,7 @@ const IntegrationSection = () => {
 
   return (
     <section className="lg:py-20 py-10" style={{ background: 'linear-gradient(103deg, #EDF4FF 28.71%, #D2DDFF 84.45%, #84A2FF 136.43%)' }}>
-      <div className="lg:max-w-7xl lg:mx-auto px-5 w-full flex flex-col lg:gap-20 gap-6">
+      <div className=" text-left 2xl:mx-[150px] px-5 w-auto flex flex-col lg:gap-20 gap-6">
         <div className="flex lg:flex-row flex-col lg:justify-between gap-10">
           <div className="lg:w-1/2 w-full lg:py-0 py-5">
             <h2 className="lg:text-6xl text-4xl font-semibold text-gray-900 mb-5 text-left" style={{ fontFamily: 'Degular Display' }}>

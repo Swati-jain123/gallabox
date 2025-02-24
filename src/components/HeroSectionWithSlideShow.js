@@ -16,14 +16,14 @@ const HeroSection = () => {
   ];
 
   return (
-    <header className="lg:max-w-7xl lg:mx-auto px-5 w-full flex flex-col lg:py-16 pb-16 gap-16">
+    <header className="lg:max-w-8xl lg:mx-auto px-5 w-full flex flex-col lg:py-16 pb-16 gap-16">
       {/* Main content section with text and video */}
-      <div className="flex flex-col lg:flex-row lg:py-5 lg:gap-0 gap-8">
+      <div className="flex flex-col lg:flex-row lg:py-5 lg:gap-0 gap-8 lg:mt-12 text-left 2xl:mx-[150px]">
         {/* Left Section: Heading, description, and call-to-action (CTA) buttons */}
         <div className="lg:w-1/2 w-full flex flex-col justify-start lg:gap-0 gap-4">
           {/* Main heading */}
           <h1
-            className="lg:text-[60px] mt-12 lg:mt-0 lg:leading-[1.1] text-4xl text-left font-open-sans font-extrabold"
+            className="lg:text-[70px] mt-12 lg:mt-0 lg:leading-[1.1] text-4xl text-left font-open-sans font-extrabold mt-[100px]"
             style={{
               fontWeight: 800,
               wordBreak: "break-word", // Prevent text overflow for responsiveness
@@ -76,15 +76,15 @@ const HeroSection = () => {
                 height="24"
                 src="https://assets.gallabox.com/gb-home/new-landing/hero-section/g2-logo.svg"
               />
-              <p className="text-sm">Rated 4.6/5 on G2</p>
+              <p className="lg:text-xl text-sm">Rated 4.6/5 on G2</p>
             </div>
-            <p className="text-sm">|</p>
-            <p className="text-sm">No credit card required</p>
+            <p className="lg:text-xl text-sm">|</p>
+            <p className="lg:text-xl text-sm">No credit card required</p>
           </div>
         </div>
 
         {/* Right Section: Promotional video */}
-        <div className="lg:w-1/2 w-full flex lg:justify-end justify-center">
+        <div className="lg:w-1/2 w-full flex lg:justify-end justify-center ">
           <div className="rounded-lg overflow-hidden">
             <video
               autoPlay
@@ -92,8 +92,8 @@ const HeroSection = () => {
               loop
               playsInline
               poster="https://assets.gallabox.com/gb-home/new-landing/hero-section/poster.png"
-              className="rounded-lg object-contain"
-              style={{ maxHeight: "550px" }}
+              className="rounded-lg object-contain "
+              style={{ maxHeight: "600px" }}
             >
               <source
                 src="https://assets.gallabox.com/gb-home/new-landing/hero-section/hero-right-section.webm"
@@ -111,12 +111,12 @@ const HeroSection = () => {
 
       {/* "Trusted by" section */}
       <div className="w-full">
-        <h3 className="text-base text-center font-normal py-2">
+        <h3 className="lg:text-xl text-base text-center font-normal py-2">
           Trusted by 5,000+ businesses
         </h3>
 
         {/* Desktop view: Scrolling client logos */}
-        <div className="relative overflow-hidden w-full h-[90px] bg-white lg:block hidden">
+        <div className="relative overflow-hidden h-[90px] bg-white lg:block hidden 2xl:mx-[150px]">
           <div className="absolute flex animate-scroll-fast">
             {logos.concat(logos).map((src, index) => (
               <div

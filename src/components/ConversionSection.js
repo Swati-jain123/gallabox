@@ -36,7 +36,7 @@ const ConversionSection = () => {
       {/* Section Container: Highlights challenges and their impact */}
       <section className="lg:py-20 py-14" style={{ backgroundColor: "#E6EEFF" }}>
         {/* Content Wrapper: Contains heading and cards */}
-        <div className="lg:max-w-7xl lg:mx-auto px-5 w-full flex flex-col gap-12">
+        <div className="2xl:mx-[150px] px-5 w-auto flex flex-col gap-12">
           {/* Main Heading for the Challenges Section */}
           <h2
             className="lg:text-5xl text-3xl font-semibold text-gray-900 lg:max-w-4xl text-left"
@@ -53,7 +53,7 @@ const ConversionSection = () => {
                */
               <div
                 key={index} // Unique key for each card to avoid React warnings
-                className="lg:w-1/3 w-full bg-white rounded-lg p-6 flex flex-col gap-6 items-start"
+                className="lg:w-1/3 w-full bg-white rounded-lg p-12 flex flex-col gap-6 items-start text-left"
               >
                 {/* Challenge Icon */}
                 <img
@@ -66,7 +66,7 @@ const ConversionSection = () => {
                   style={{ color: "transparent" }} // Ensures a clean transparent background
                 />
                 {/* Challenge Description */}
-                <p className="text-xl font-normal">{card.text}</p>
+                <p className="text-xl lg:text-2xl font-normal">{card.text}</p>
               </div>
             ))}
           </div>
