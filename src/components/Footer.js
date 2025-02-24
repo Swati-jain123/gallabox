@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
 
       {/* Middle Section */}
-      <div className="hidden lg:block 2xl:max-w-[1500px] lg:mx-auto px-5 w-full pt-20 pb-12">
+      <div className="hidden lg:block 2xl:max-w-[1300px] lg:mx-auto px-5 w-full pt-20 pb-12">
         <div className="flex flex-col gap-16">
           <div className="w-full flex flex-row gap-5">
             {/* Features */}
@@ -163,7 +163,7 @@ const Footer = () => {
       </div>
 
      {/* Download App Section */}
-<div className="2xl:max-w-[1500px] lg:mx-auto px-5 w-full border-b border-solid border-gray-700 flex lg:justify-between lg:flex-row flex-col gap-20 lg:pt-0 pt-16 lg:pb-20 pb-16">
+<div className="2xl:max-w-[1300px] lg:mx-auto px-5 w-full border-b border-solid border-gray-700 flex lg:justify-between lg:flex-row flex-col gap-20 lg:pt-0 pt-16 lg:pb-20 pb-16">
   <div className="w-64 flex flex-col text-inherit text-sm">
     <h6 className="my-0 font-medium tracking-wider text-2xl text-left">Download the App</h6>
     <div className="flex items-center justify-center lg:justify-start">
@@ -228,13 +228,13 @@ const Footer = () => {
 
       {/* Gallabox Logo Section */}
       <h2 style={{ fontFamily: 'Degular Display' }} className="lg:hidden block text-7xl font-bold text-white text-center py-10">Gallabox</h2>
-      <div className="lg:block hidden 2xl:max-w-[1500px] lg:mx-auto px-5 w-full py-20">
+      <div className="lg:block hidden 2xl:max-w-[1300px] lg:mx-auto px-5 w-full py-20">
         <img alt="gallabox" loading="lazy" decoding="async" style={{ color: 'transparent' }}src="https://gallabox.com/_next/image?url=https%3A%2F%2Fassets.gallabox.com%2Fgb-home%2Fnew-landing%2Ffooter%2Fgallabox-name.png&w=3840&q=75" />
       </div>
 
       {/* Bottom Section */}
       <div style={{ backgroundColor: '#0E1018' }} className="py-6">
-        <div className="2xl:max-w-[1500px] lg:mx-auto px-5 w-full flex lg:justify-between lg:flex-row flex-col gap-4">
+        <div className="2xl:max-w-[1300px] lg:mx-auto px-5 w-full flex lg:justify-between lg:flex-row flex-col gap-4">
           <span className="text-white text-[13px] lg:text-[18px] tracking-wide lg:text-left text-center lg:w-full w-64 lg:mx-0 mx-auto">© 2025 Gallabox Global Inc. All rights reserved.</span>
           <div className="w-full flex flex-row gap-5 text-[13px] lg:text-[18px] text-gray-200 lg:justify-end justify-center">
             {['Cookie Policy', 'Privacy Policy', 'Terms & Conditions'].map((policy, index) => (
