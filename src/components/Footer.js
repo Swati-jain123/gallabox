@@ -42,10 +42,10 @@ const Footer = () => {
           <div className="w-full flex flex-row gap-5">
             {/* Features */}
             <div className="flex flex-col gap-5 w-1/3">
-              <h6 className="text-xl text-gray-100 font-semibold text-left">Features</h6>
+              <h6 className="text-[14px] text-gray-100 font-semibold text-left">Features</h6>
               <div className="flex flex-col gap-4 pb-6">
                 {mobileMenuItems.Features.map((feature, index) => (
-                  <a key={index} className="text-xl hover:underline cursor-pointer text-gray-400 text-left" href={`/${feature.toLowerCase().replace(/ /g, '-')}`}>{feature}</a>
+                  <a key={index} className="text-[14px] hover:underline cursor-pointer text-gray-400 text-left" href={`/${feature.toLowerCase().replace(/ /g, '-')}`}>{feature}</a>
                 ))}
               </div>
             </div>
