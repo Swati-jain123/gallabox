@@ -251,7 +251,7 @@ const ResponsiveHeader = () => {
   return (
     <nav className="bg-white shadow-lg border-gray-200 dark:bg-gray-900 dark:border-gray-700 fixed z-50 w-full">
       {/* Container for navigation content */}
-      <div className="mx-auto flex justify-between p-4 lg:flex-row 2xl:mx-[150px]">
+      <div className="mx-auto flex justify-between p-2 lg:flex-row 2xl:mx-[150px]">
         {/* Gallabox Logo  Left side*/}
         <a href="#" className="flex items-center mb-4 lg:mb-0">
           <img
