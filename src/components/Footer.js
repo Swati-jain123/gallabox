@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="w-full flex flex-row gap-5">
             {/* Features */}
             <div className="flex flex-col gap-5 w-1/3">
-              <h6 className="text-2xl text-gray-100 font-semibold text-left">Features</h6>
+              <h6 className="text-xl text-gray-100 font-semibold text-left">Features</h6>
               <div className="flex flex-col gap-4 pb-6">
                 {mobileMenuItems.Features.map((feature, index) => (
                   <a key={index} className="text-xl hover:underline cursor-pointer text-gray-400 text-left" href={`/${feature.toLowerCase().replace(/ /g, '-')}`}>{feature}</a>
@@ -52,7 +52,7 @@ const Footer = () => {
 
             {/* Integration */}
             <div className="flex flex-col gap-5 w-1/4">
-              <h6 className="text-2xl text-gray-100 font-semibold text-left">Integration</h6>
+              <h6 className="text-xl text-gray-100 font-semibold text-left">Integration</h6>
               <div className="flex flex-col gap-4 pb-6 text-left">
                 {mobileMenuItems.Integration.map((integration, index) => (
                   <a key={index} className="text-xl hover:underline cursor-pointer text-gray-400" href={`/${integration.toLowerCase().replace(/ /g, '-')}`}>
@@ -65,7 +65,7 @@ const Footer = () => {
 
             {/* Industry */}
             <div className="flex flex-col gap-5 w-1/4">
-              <h6 className="text-2xl text-gray-100 font-semibold text-left">Industry</h6>
+              <h6 className="text-xl text-gray-100 font-semibold text-left">Industry</h6>
               <div className="flex flex-col gap-4 pb-6 text-left">
                 {mobileMenuItems.Industry.map((industry, index) => (
                   <a key={index} className="text-xl hover:underline cursor-pointer text-gray-400" href={`/${industry.toLowerCase().replace(/ /g, '-')}`}>
@@ -78,7 +78,7 @@ const Footer = () => {
 
             {/* Compare */}
             <div className="flex flex-col gap-5 w-1/4">
-              <h6 className="text-2xl text-gray-100 font-semibold text-left">Compare</h6>
+              <h6 className="text-xl text-gray-100 font-semibold text-left">Compare</h6>
               <div className="flex flex-col gap-4 pb-6 text-left">
                 {mobileMenuItems.Compare.map((compare, index) => (
                   <a key={index} className="text-xl hover:underline cursor-pointer text-gray-400" href={`/${compare.toLowerCase().replace(/ /g, '-')}`}>{compare}</a>
@@ -88,7 +88,7 @@ const Footer = () => {
 
             {/* Resources */}
             <div className="flex flex-col gap-5 w-1/4">
-              <h6 className="text-2xl text-gray-100 font-semibold text-left">Resources</h6>
+              <h6 className="text-xl text-gray-100 font-semibold text-left">Resources</h6>
               <div className="flex flex-col gap-4 pb-6 text-left">
                 {mobileMenuItems.Resources.map((resource, index) => (
                   <a key={index} className="text-xl hover:underline cursor-pointer text-gray-400" href={`/${resource.toLowerCase().replace(/ /g, '-')}`} target="_blank" rel="noreferrer">{resource}</a>
@@ -98,7 +98,7 @@ const Footer = () => {
 
             {/* Company */}
             <div className="flex flex-col gap-5 w-1/4">
-              <h6 className="text-2xl text-gray-100 font-semibold text-left">Company</h6>
+              <h6 className="text-xl text-gray-100 font-semibold text-left">Company</h6>
               <div className="flex flex-col gap-4 pb-6 text-left">
                 {mobileMenuItems.Company.map((company, index) => (
                   <a key={index} className="text-xl cursor-pointer text-gray-400 hover:underline" href={`/${company.toLowerCase().replace(/ /g, '-')}`}>
